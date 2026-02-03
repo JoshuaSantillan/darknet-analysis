@@ -5,6 +5,7 @@ data/pcaps/
 data/testpcab/
 data/metadata
 output/
+asn/
 __pycache__/
 *.pyc
 *.pyo
