@@ -111,8 +111,10 @@ def plot_time(country_hour_bytes, top_countries):
     plt.tight_layout()
     plt.annotate("~23 MB/hr", xy=(102, 23), xytext=(85, 22),
              arrowprops=dict(arrowstyle="->"))
+    
+    plt.savefig("../plots/22", dpi=300)
     plt.show()
-
+    plt.close()
 def main():
     with open(len_cache_file, "rb") as f:
         packet_len_cache = pickle.load(f)
